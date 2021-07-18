@@ -77,7 +77,7 @@ public class Thermometer extends View {
         mInnerCirclePaint.setStrokeWidth((int)(bitmap.getWidth() / 10));
         left = (getWidth() - bitmap.getWidth()) / 2;
         top = (getHeight() - bitmap.getHeight()) / 2;
-        innerCircleCenter = (left + left + bitmap.getWidth() + 15) / 2;
+        innerCircleCenter = (left + left + bitmap.getWidth() + (Math.min(width, height) / 72)) / 2;
         circleHeight = (top + bitmap.getHeight()) - (int)(bitmap.getHeight() / 4.6f);
         lineStartY = ((int)(bitmap.getHeight() / 4.6f) + top);
         lineEndY = (top + bitmap.getHeight()) - (int)(bitmap.getHeight() / 4f);
